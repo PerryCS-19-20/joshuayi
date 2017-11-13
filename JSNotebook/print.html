@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>      
+    <link href="https://perryma.tk/jsnotebook/notebook.css" rel="stylesheet" type="text/css" />    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://perryma.tk/jsnotebook/notebook.js"></script>
+    <title>My JavaScript Notebook</title>
+  </head>
+
+  <body>
+    <div class="header">
+        <!-- Title for this notebook page -->
+        <h1>My JavaScript Notebook: <em>print and println</em></h1>
+        <div class="menubar"></div>
+    </div>
+    
+    <!-- Describe what this notebook page is showing -->
+    <p><em>We learned about print and println; about what they do and their unique properties that differentiate them. We use print and
+        println to put text and numbers onto the screen. We would typically use this type of code to display information that the user
+        might find beneficial. The difference between them however is that if we were to use println, it puts the coding after it into 
+        a separate line. If you want text on the same line you would print.</em></p>
+    
+    <!-- Below is the code that will run -->
+    <div>
+      <div class="title"> <!-- title bar for the javascript code -->
+        <button onclick="start();">Run</button> <!-- Run button that calls start function when pressed -->
+        Hello World <!-- Program title -->
+      </div>
+
+<script class="code">
+    function start() {
+        println("Hello World!");
+        println("Joshua Yi");
+        print("Favorite Color: ");
+        println("Blue");
+    }
+
+</script>
+      <canvas id="Drawing"></canvas> <!-- Graphics output canvas -->
+      <textarea id="Console"></textarea> <!-- Text output console -->
+    </div>
+    
+  </body>
+</html>
