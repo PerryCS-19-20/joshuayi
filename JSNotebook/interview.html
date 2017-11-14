@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>      
+    <link href="https://perryma.tk/jsnotebook/notebook.css" rel="stylesheet" type="text/css" />    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://perryma.tk/jsnotebook/notebook.js"></script>
+    <title>My JavaScript Notebook</title>
+  </head>
+
+  <body>
+    <div class="header">
+        <!-- Title for this notebook page -->
+        <h1>My JavaScript Notebook: <em>User Input and Variables</em></h1>
+        <div class="menubar"></div>
+    </div>
+    
+    <!-- Describe what this notebook page is showing -->
+    <p><em>I learned about User Input and Variables. I learned about how they work and their unique attributes. Typically,
+    when using User Input, we also need variables. We use variables to store information, whether its from a User Input or calculations done in the coding.</em></p>
+    
+    <!-- Below is the code that will run -->
+    <div>
+      <div class="title"> <!-- title bar for the javascript code -->
+        <button onclick="start();">Run</button> <!-- Run button that calls start function when pressed -->
+        Hello World <!-- Program title -->
+      </div>
+
+<script class="code">
+  function start() {
+    var fName = readInt("What is your first name?");
+    var lName = readInt("What is your last name?");
+    var mIni = readInt("What is your middle initial");
+    var age = readInt("What is your age?");
+    var ySchool = readInt("What year in school are you in?");
+    var wSchool = readInt("Do you walk to school?");
+    var hW = readInt("How many hours of homework are you planning on doing tonight?");
+    var ynWeekend = readBoolean("Do you have plans for the weekend?");
+    var weekendP = readInt("What are your plans for the weekend?");
+    var fTeam = readInt("What is your favorite sports team?");
+    var college = readInt("What college would you like to go to?");
+    var career = readInt("What would you like to study in college?");
+    
+    println("Subject: " + lName + "," + fName + " " + mIni);
+    println("Born in: " + (2017-age));
+    println(ySchool + ", " + "Walks to school: " + wSchool);
+  }
+
+</script>
+      <canvas id="Drawing"></canvas> <!-- Graphics output canvas -->
+      <textarea id="Console"></textarea> <!-- Text output console -->
+    </div>
+    
+  </body>
+</html>
