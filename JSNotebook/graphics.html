@@ -31,6 +31,14 @@
         canvas.prepare();
         var rect1 = new Rect(0, 0, canvas.getWidth(), canvas.getHeight());
         var circ1 = new Circle(canvas.getWidth()/2, canvas.getHeight()/2, canvas.getWidth()/4);
+        var aLine = new Line(15,5,10,3);
+        rect1.setColor("blue");
+        circ1.setColor("red");
+        aLine.setColor("green");
+        canvas.add(rect1);
+        canvas.add(circ1);
+        canvas.add(aLine);
+        canvas.draw();
     }
 
 </script>
