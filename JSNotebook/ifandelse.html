@@ -1,0 +1,70 @@
+<html>
+  <head>      
+    <link href="https://perryma.tk/jsnotebook/notebook.css" rel="stylesheet" type="text/css" />    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>My JavaScript Notebook</title>
+  </head>
+
+  <body>
+    <div class="header">
+        <!-- Title for this notebook page -->
+        <h1>My JavaScript Notebook: <em>if and else</em></h1>
+        <div class="menubar"></div>
+    </div>
+    
+    <!-- Describe what this notebook page is showing -->
+    <p><em>Today we learned about if and else. Turns out that if and else statements play a huge role in coding. If and else statements can be used in
+        a similar fashion to boolean statements. If the if statement declared is true, it will do the coding inside of its brackets. If the if statement is not true,
+        it will move onto the else statement and conduct the coding inside of its brackets.</em></p>
+    
+    <!-- Below is the code that will run -->
+    <div>
+      <div class="title"> <!-- title bar for the javascript code -->
+        <button onclick="start();">Run</button> <!-- Run button that calls start function when pressed -->
+        Hello World <!-- Program title -->
+      </div>
+
+<script class="code">
+
+    function start() {
+        var winter = readBoolean("Is it Winter?");
+        if (winter) {
+        canvas.prepare();
+             var rect1 = new Rect(0, 0, canvas.getWidth(), canvas.getHeight());
+            var circ1 = new Circle((canvas.getWidth()/2), (canvas.getHeight()*5)/6, (canvas.getHeight()/6));
+            var circ2 = new Circle((canvas.getWidth()/2), (canvas.getHeight()*5.2)/9, (canvas.getHeight()/9));
+            var circ3 = new Circle((canvas.getWidth()/2), (canvas.getHeight()*10.6)/27, ((canvas.getHeight()*2)/27));
+            rect1.setColor("blue");
+            circ1.setColor("white");
+            circ2.setColor("white");
+            circ3.setColor("white");
+            canvas.add(rect1);
+            canvas.add(circ1);
+            canvas.add(circ2);
+            canvas.add(circ3);
+            canvas.draw();
+    }
+        else {
+            canvas.prepare();
+            var rect1 = new Rect(0, 0, canvas.getWidth(), canvas.getHeight());
+            var circ1 = new Circle((canvas.getWidth()/2), (canvas.getHeight()*5)/6, (canvas.getHeight()/6));
+            var circ2 = new Circle((canvas.getWidth()/2), (canvas.getHeight()*5.2)/9, (canvas.getHeight()/9));
+            var circ3 = new Circle((canvas.getWidth()/2), (canvas.getHeight()*10.6)/27, ((canvas.getHeight()*2)/27));
+            rect1.setColor("red");
+            circ1.setColor("brown");
+            circ2.setColor("brown");
+            circ3.setColor("brown");
+            canvas.add(rect1);
+            canvas.add(circ1);
+            canvas.add(circ2);
+            canvas.add(circ3);
+            canvas.draw();
+    }
+   }
+</script>
+      <canvas id="Drawing"></canvas> <!-- Graphics output canvas -->
+      <textarea id="Console"></textarea> <!-- Text output console -->
+    </div>
+    <script src="https://perryma.tk/jsnotebook/notebook.js"></script>    
+  </body>
+</html>
