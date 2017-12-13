@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+  <head>      
+    <link href="https://perryma.tk/jsnotebook/notebook.css" rel="stylesheet" type="text/css" />    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>My JavaScript Notebook</title>
+  </head>
+
+  <body>
+    <div class="header">
+        <!-- Title for this notebook page -->
+        <h1>My JavaScript Notebook: <em>Graphics Objects</em></h1>
+        <div class="menubar"></div>
+    </div>
+    
+    <!-- Describe what this notebook page is showing -->
+    <p><em>I learned about for loops and while loops. I learned how to utilize them properly and how useful they can be. For and while loops
+        are used to repeat code while a statement stands true.</em></p>
+    
+    <!-- Below is the code that will run -->
+    <div>
+      <div class="title"> <!-- title bar for the javascript code -->
+        <button onclick="start();">Run</button> <!-- Run button that calls start function when pressed -->
+        tilingCircles <!-- Program title -->
+      </div>
+
+<script class="code">
+
+    function start() {
+     canvas.prepare();
+          
+          var diameter = readInt("How many circles in the row?");
+          row();
+          if() {
+              
+          }
+          else {
+              
+          }
+          function row() {
+            for(var add = canvas.getWidth()/(2 * diameter); add < canvas.getWidth(); add = add + (canvas.getWidth()/diameter)) {
+
+            var r = Math.floor(Math.random() * 256);
+            var g = Math.floor(Math.random() * 256);
+            var b = Math.floor(Math.random() * 256);
+            var circ1 = new Circle(add, canvas.getWidth()/(2 * diameter), canvas.getWidth()/(2 * diameter));
+            circ1.setColor(rgb(r, g, b));
+          canvas.add(circ1);
+        }
+          canvas.draw();   
+    }
+
+</script>
+      <canvas id="Drawing"></canvas> <!-- Graphics output canvas -->
+      <textarea id="Console"></textarea> <!-- Text output console -->
+    </div>
+    <script src="https://perryma.tk/jsnotebook/notebook.js"></script>    
+  </body>
+</html>
