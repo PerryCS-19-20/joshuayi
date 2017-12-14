@@ -30,18 +30,18 @@
      canvas.prepare();
           
           var diameter = readInt("How many circles in the row?");
-
+          for(var row = canvas.getWidth()/(2 * diameter); row < canvas.getHeight(); row = row + (canvas.getWidth()/diameter)) {
             for(var add = canvas.getWidth()/(2 * diameter); add < canvas.getWidth(); add = add + (canvas.getWidth()/diameter)) {
-
             var r = Math.floor(Math.random() * 256);
             var g = Math.floor(Math.random() * 256);
             var b = Math.floor(Math.random() * 256);
-            var circ1 = new Circle(add, canvas.getWidth()/(2 * diameter), canvas.getWidth()/(2 * diameter));
+            var circ1 = new Circle(add, row, canvas.getWidth()/(2 * diameter));
             circ1.setColor(rgb(r, g, b));
           canvas.add(circ1);
         }
           canvas.draw();   
     }
+}
 
 </script>
       <canvas id="Drawing"></canvas> <!-- Graphics output canvas -->
