@@ -10,12 +10,14 @@
   <body>
     <div class="header">
         <!-- Title for this notebook page -->
-        <h1>My JavaScript Notebook: <em>Variables and Math</em></h1>
+        <h1>My JavaScript Notebook: <em>conversions</em></h1>
         <div class="menubar"></div>
     </div>
     
     <!-- Describe what this notebook page is showing -->
-    <p><em>What I learned today...</em></p>
+    <p><em>We learned about creating/defining new functions. By creating new functions we can make our coding simpler and more efficient.
+    There are many uses for functions. not only can we define functions and call them whenever, functions can also be used to feed information 
+    to each other, kind of like a chain.</em></p>
     
     <!-- Below is the code that will run -->
     <div>
@@ -26,7 +28,34 @@
 
 <script class="code">
 
-    //Your code here
+    function start() {
+  var distance = readInt("Distance in miles?");
+  println(milesToKilometers(distance));
+  println(kilometersToMeters(distance));
+  println(metersToFeet(distance));
+  println(feetToInches(distance));
+  println(inchesToMillimeters(distance));
+}
+function milesToKilometers(miles) {
+ var kilometers = miles * 1.60934;
+ return miles;
+}
+function kilometersToMeters(kilometers) {
+var meters = kilometers * 1000;
+return kilometers;
+}
+function metersToFeet(meters) {
+var feet = meters * 3.28;
+return meters;
+}
+function feetToInches(feet) {
+var inches = feet * 12;
+return feet;
+}
+function inchesToMillimeters(inches) {
+var millimeter = inches * 25.4;
+return inches
+}
 
 </script>
       <canvas id="Drawing"></canvas> <!-- Graphics output canvas -->
