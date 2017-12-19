@@ -30,31 +30,31 @@
 
     function start() {
   var miles = readInt("Distance in miles?");
-  var km = println(milesToKilometers(miles));
-  var m = println(kilometersToMeters(km));
-  var ft = println(metersToFeet(m));
-  var inch = println(feetToInches(ft));
-  var mm = println(inchesToMillimeters(inch));
+  var kilometers = println(milesToKilometers(miles));
+  var meters = println(kilometersToMeters(km));
+  var feet = println(metersToFeet(m));
+  var inches = println(feetToInches(ft));
+  var millimeters = println(inchesToMillimeters(inch));
 }
 function milesToKilometers(miles) {
- miles = miles * 1.60934;
- return miles;
+ var kilometers = miles * 1.60934;
+ return kilometers;
 }
 function kilometersToMeters(kilometers) {
-kilometers = kilometers * 1000;
-return kilometers;
-}
-function metersToFeet(meters) {
-meters = meters * 3.28;
+var meters = kilometers * 1000;
 return meters;
 }
-function feetToInches(feet) {
-feet = feet * 12;
+function metersToFeet(meters) {
+var feet = meters * 3.28;
 return feet;
 }
+function feetToInches(feet) {
+var inches = feet * 12;
+return inches;
+}
 function inchesToMillimeters(inches) {
-inches = inches * 25.4;
-return inches
+var millimeters = inches * 25.4;
+return millimeters
 }
 
 </script>
