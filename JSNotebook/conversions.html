@@ -29,31 +29,31 @@
 <script class="code">
 
     function start() {
-  var distance = readInt("Distance in miles?");
-  println(milesToKilometers(distance));
-  println(kilometersToMeters(distance));
-  println(metersToFeet(distance));
-  println(feetToInches(distance));
-  println(inchesToMillimeters(distance));
+  var miles = readInt("Distance in miles?");
+  println(milesToKilometers(miles));
+  println(kilometersToMeters(kilometers));
+  println(metersToFeet(meters));
+  println(feetToInches(feet));
+  println(inchesToMillimeters(inches));
 }
 function milesToKilometers(miles) {
- miles = miles * 1.60934;
+ var kilometers = miles * 1.60934;
  return miles;
 }
 function kilometersToMeters(kilometers) {
-kilometers = kilometers * 1000;
+var meters = kilometers * 1000;
 return kilometers;
 }
 function metersToFeet(meters) {
-meters = meters * 3.28;
+var feet = meters * 3.28;
 return meters;
 }
 function feetToInches(feet) {
-feet = feet * 12;
+var inches = feet * 12;
 return feet;
 }
 function inchesToMillimeters(inches) {
-inches = inches * 25.4;
+var millimeters= inches * 25.4;
 return inches
 }
 
